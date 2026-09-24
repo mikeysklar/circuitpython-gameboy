@@ -1,0 +1,4 @@
+/src/build/
+/src/peanutgb.mpy
+.DS_Store
+__pycache__/
