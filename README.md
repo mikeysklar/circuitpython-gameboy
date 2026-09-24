@@ -79,6 +79,7 @@ tar xf arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi.tar.xz
 export PATH=$PWD/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin:$PATH
 pip install pyelftools    # Debian/Ubuntu: sudo apt install python3-pyelftools
 
+git clone https://github.com/mikeysklar/circuitpython-gameboy
 git clone --depth 1 https://github.com/adafruit/circuitpython
 cd circuitpython-gameboy/src
 make MPY_DIR=../../circuitpython ARCH=armv7emsp OPT="-O2 -funroll-loops"
